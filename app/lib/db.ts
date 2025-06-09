@@ -1,7 +1,7 @@
 import { Pool, PoolClient } from 'pg';
 
 const pool = new Pool({
-  connectionString: process.env.DATABASE_URL || 'postgresql://ecom_admin:npg_Wt4xJu7LeopZ@ep-still-brook-a88zndyc-pooler.eastus2.azure.neon.tech/ecom_express?sslmode=require',
+  connectionString: process.env.DATABASE_URL,
 });
 
 export async function query(text: string, params?: any[]): Promise<any> {
