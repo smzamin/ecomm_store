@@ -8,7 +8,7 @@ import {
   useState,
 } from 'react';
 
-interface UserData {
+export interface UserData {
   username: string;
   email: string;
   profile: { bio: string; createdAt: string } | null;

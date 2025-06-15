@@ -40,7 +40,11 @@ export default function Login() {
 
         localStorage.setItem('user', JSON.stringify(userData));
         localStorage.setItem('token', data.token);
-        router.push('/');
+        if (data.user.role?.toLowerCase() === 'admin') {
+          router.push('/admin');
+        } else {
+          router.push('/');
+        }
       } else {
         setError(data.errors || [data.message]);
       }
