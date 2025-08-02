@@ -52,4 +52,11 @@ export const blockContentType = defineType({
       ],
     }),
   ],
+  preview: {
+    select: {
+      title: 'title',
+      subtitle: 'description',
+      media: 'image',
+    },
+  },
 });

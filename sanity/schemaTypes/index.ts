@@ -1,3 +1,4 @@
+import { heroBannerSlot } from './heroBannerSlot';
 import { type SchemaTypeDefinition } from 'sanity';
 import { addressType } from './addressType';
 import { blockContentType } from './blockContentType';
@@ -14,5 +15,6 @@ export const schema: { types: SchemaTypeDefinition[] } = {
     brandType,
     addressType,
     blockContentType,
+    heroBannerSlot
   ],
 };
